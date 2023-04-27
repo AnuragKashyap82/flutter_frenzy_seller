@@ -55,18 +55,16 @@ class _ShopDetailsScreenState extends State<ShopDetailsScreen> {
                       1.3,
                       Padding(
                         padding: const EdgeInsets.only(right: 64),
-                        child: Expanded(
-                          child: TextField(
-                            keyboardType: TextInputType.text,
-                            textInputAction: TextInputAction.next,
-                            controller: _shopNameController,
-                            style: TextStyle(fontSize: 12),
-                            decoration: InputDecoration(
-                              label: Text("Shop Name"),
-                              border: OutlineInputBorder(
-                                  borderRadius: BorderRadius.circular(25),
-                                  borderSide: BorderSide(color: Colors.blue)),
-                            ),
+                        child: TextField(
+                          keyboardType: TextInputType.text,
+                          textInputAction: TextInputAction.next,
+                          controller: _shopNameController,
+                          style: TextStyle(fontSize: 12),
+                          decoration: InputDecoration(
+                            label: Text("Shop Name"),
+                            border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(25),
+                                borderSide: BorderSide(color: Colors.blue)),
                           ),
                         ),
                       )),

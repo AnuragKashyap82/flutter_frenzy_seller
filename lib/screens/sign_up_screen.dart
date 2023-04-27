@@ -88,7 +88,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                               alignment: Alignment.topCenter,
                               child: Padding(
                                 padding:
-                                    const EdgeInsets.symmetric(horizontal: 32),
+                                     EdgeInsets.symmetric(horizontal: 32),
                                 child: Text(
                                   "Create Your Seller Account",
                                   style: TextStyle(
@@ -108,23 +108,21 @@ class _SignUpScreenState extends State<SignUpScreen> {
                               Padding(
                                 padding:
                                     const EdgeInsets.symmetric(horizontal: 32),
-                                child: Expanded(
-                                  child: TextField(
-                                    keyboardType: TextInputType.phone,
-                                    textInputAction: TextInputAction.next,
-                                    maxLength: 10,
-                                    onChanged: (value) {
-                                      phone = value;
-                                    },
-                                    style: TextStyle(fontSize: 12),
-                                    decoration: InputDecoration(
-                                      label: Text("Enter Your Phone No."),
-                                      border: OutlineInputBorder(
-                                          borderRadius:
-                                              BorderRadius.circular(5),
-                                          borderSide:
-                                              BorderSide(color: Colors.blue)),
-                                    ),
+                                child: TextField(
+                                  keyboardType: TextInputType.phone,
+                                  textInputAction: TextInputAction.next,
+                                  maxLength: 10,
+                                  onChanged: (value) {
+                                    phone = value;
+                                  },
+                                  style: TextStyle(fontSize: 12),
+                                  decoration: InputDecoration(
+                                    label: Text("Enter Your Phone No."),
+                                    border: OutlineInputBorder(
+                                        borderRadius:
+                                            BorderRadius.circular(5),
+                                        borderSide:
+                                            BorderSide(color: Colors.blue)),
                                   ),
                                 ),
                               )),
@@ -136,22 +134,20 @@ class _SignUpScreenState extends State<SignUpScreen> {
                               Padding(
                                 padding:
                                     const EdgeInsets.symmetric(horizontal: 32),
-                                child: Expanded(
-                                  child: TextField(
-                                    keyboardType: TextInputType.number,
-                                    textInputAction: TextInputAction.next,
-                                    onChanged: (value) {
-                                      code = value;
-                                    },
-                                    style: TextStyle(fontSize: 12),
-                                    decoration: InputDecoration(
-                                      label: Text("Enter Your OTP"),
-                                      border: OutlineInputBorder(
-                                          borderRadius:
-                                              BorderRadius.circular(5),
-                                          borderSide:
-                                              BorderSide(color: Colors.blue)),
-                                    ),
+                                child: TextField(
+                                  keyboardType: TextInputType.number,
+                                  textInputAction: TextInputAction.next,
+                                  onChanged: (value) {
+                                    code = value;
+                                  },
+                                  style: TextStyle(fontSize: 12),
+                                  decoration: InputDecoration(
+                                    label: Text("Enter Your OTP"),
+                                    border: OutlineInputBorder(
+                                        borderRadius:
+                                            BorderRadius.circular(5),
+                                        borderSide:
+                                            BorderSide(color: Colors.blue)),
                                   ),
                                 ),
                               )),
@@ -178,21 +174,19 @@ class _SignUpScreenState extends State<SignUpScreen> {
                               Padding(
                                 padding:
                                     const EdgeInsets.symmetric(horizontal: 32),
-                                child: Expanded(
-                                  child: TextField(
-                                    keyboardType: TextInputType.emailAddress,
-                                    textInputAction: TextInputAction.next,
-                                    controller: _emailController,
-                                    enabled: emailEnabled,
-                                    style: TextStyle(fontSize: 12),
-                                    decoration: InputDecoration(
-                                      label: Text("Enter Your Email"),
-                                      border: OutlineInputBorder(
-                                          borderRadius:
-                                              BorderRadius.circular(5),
-                                          borderSide:
-                                              BorderSide(color: Colors.blue)),
-                                    ),
+                                child: TextField(
+                                  keyboardType: TextInputType.emailAddress,
+                                  textInputAction: TextInputAction.next,
+                                  controller: _emailController,
+                                  enabled: emailEnabled,
+                                  style: TextStyle(fontSize: 12),
+                                  decoration: InputDecoration(
+                                    label: Text("Enter Your Email"),
+                                    border: OutlineInputBorder(
+                                        borderRadius:
+                                            BorderRadius.circular(5),
+                                        borderSide:
+                                            BorderSide(color: Colors.blue)),
                                   ),
                                 ),
                               )),
@@ -204,21 +198,19 @@ class _SignUpScreenState extends State<SignUpScreen> {
                               Padding(
                                 padding:
                                     const EdgeInsets.symmetric(horizontal: 32),
-                                child: Expanded(
-                                  child: TextField(
-                                    keyboardType: TextInputType.name,
-                                    controller: _nameController,
-                                    textInputAction: TextInputAction.next,
-                                    enabled: emailEnabled,
-                                    style: TextStyle(fontSize: 12),
-                                    decoration: InputDecoration(
-                                      label: Text("Enter Your Full Name"),
-                                      border: OutlineInputBorder(
-                                          borderRadius:
-                                              BorderRadius.circular(5),
-                                          borderSide:
-                                              BorderSide(color: Colors.blue)),
-                                    ),
+                                child: TextField(
+                                  keyboardType: TextInputType.name,
+                                  controller: _nameController,
+                                  textInputAction: TextInputAction.next,
+                                  enabled: emailEnabled,
+                                  style: TextStyle(fontSize: 12),
+                                  decoration: InputDecoration(
+                                    label: Text("Enter Your Full Name"),
+                                    border: OutlineInputBorder(
+                                        borderRadius:
+                                            BorderRadius.circular(5),
+                                        borderSide:
+                                            BorderSide(color: Colors.blue)),
                                   ),
                                 ),
                               )),
@@ -230,24 +222,22 @@ class _SignUpScreenState extends State<SignUpScreen> {
                               Padding(
                                 padding:
                                     const EdgeInsets.symmetric(horizontal: 32),
-                                child: Expanded(
-                                  child: TextField(
-                                    keyboardType: TextInputType.visiblePassword,
-                                    textInputAction: TextInputAction.next,
-                                    controller: _passwordController,
-                                    enabled: emailEnabled,
-                                    style: TextStyle(fontSize: 12),
-                                    decoration: InputDecoration(
-                                      label: Text("Enter your password"),
-                                      suffixIcon: Icon(
-                                        Icons.remove_red_eye,
-                                      ),
-                                      border: OutlineInputBorder(
-                                          borderRadius:
-                                              BorderRadius.circular(5),
-                                          borderSide:
-                                              BorderSide(color: Colors.blue)),
+                                child: TextField(
+                                  keyboardType: TextInputType.visiblePassword,
+                                  textInputAction: TextInputAction.next,
+                                  controller: _passwordController,
+                                  enabled: emailEnabled,
+                                  style: TextStyle(fontSize: 12),
+                                  decoration: InputDecoration(
+                                    label: Text("Enter your password"),
+                                    suffixIcon: Icon(
+                                      Icons.remove_red_eye,
                                     ),
+                                    border: OutlineInputBorder(
+                                        borderRadius:
+                                            BorderRadius.circular(5),
+                                        borderSide:
+                                            BorderSide(color: Colors.blue)),
                                   ),
                                 ),
                               )),
@@ -259,24 +249,22 @@ class _SignUpScreenState extends State<SignUpScreen> {
                               Padding(
                                 padding:
                                     const EdgeInsets.symmetric(horizontal: 32),
-                                child: Expanded(
-                                  child: TextField(
-                                    keyboardType: TextInputType.visiblePassword,
-                                    textInputAction: TextInputAction.done,
-                                    controller: _cPasswordController,
-                                    enabled: emailEnabled,
-                                    style: TextStyle(fontSize: 12),
-                                    decoration: InputDecoration(
-                                      label: Text("Confirm Your Password"),
-                                      suffixIcon: Icon(
-                                        Icons.remove_red_eye,
-                                      ),
-                                      border: OutlineInputBorder(
-                                          borderRadius:
-                                              BorderRadius.circular(5),
-                                          borderSide:
-                                              BorderSide(color: Colors.blue)),
+                                child: TextField(
+                                  keyboardType: TextInputType.visiblePassword,
+                                  textInputAction: TextInputAction.done,
+                                  controller: _cPasswordController,
+                                  enabled: emailEnabled,
+                                  style: TextStyle(fontSize: 12),
+                                  decoration: InputDecoration(
+                                    label: Text("Confirm Your Password"),
+                                    suffixIcon: Icon(
+                                      Icons.remove_red_eye,
                                     ),
+                                    border: OutlineInputBorder(
+                                        borderRadius:
+                                            BorderRadius.circular(5),
+                                        borderSide:
+                                            BorderSide(color: Colors.blue)),
                                   ),
                                 ),
                               )),

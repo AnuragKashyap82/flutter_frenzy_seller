@@ -143,21 +143,19 @@ class _GSTDetailsScreenState extends State<GSTDetailsScreen> {
                               Padding(
                                 padding:
                                     const EdgeInsets.symmetric(horizontal: 32),
-                                child: Expanded(
-                                  child: TextField(
-                                    keyboardType: TextInputType.text,
-                                    textInputAction: TextInputAction.done,
-                                    maxLength: 15,
-                                    controller: _gstNoController,
-                                    style: TextStyle(fontSize: 12),
-                                    decoration: InputDecoration(
-                                      label: Text("Enter Your GSTIN Number"),
-                                      border: OutlineInputBorder(
-                                          borderRadius:
-                                              BorderRadius.circular(5),
-                                          borderSide:
-                                              BorderSide(color: Colors.blue)),
-                                    ),
+                                child: TextField(
+                                  keyboardType: TextInputType.text,
+                                  textInputAction: TextInputAction.done,
+                                  maxLength: 15,
+                                  controller: _gstNoController,
+                                  style: TextStyle(fontSize: 12),
+                                  decoration: InputDecoration(
+                                    label: Text("Enter Your GSTIN Number"),
+                                    border: OutlineInputBorder(
+                                        borderRadius:
+                                            BorderRadius.circular(5),
+                                        borderSide:
+                                            BorderSide(color: Colors.blue)),
                                   ),
                                 ),
                               )),

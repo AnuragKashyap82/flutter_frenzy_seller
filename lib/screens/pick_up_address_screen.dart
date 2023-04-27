@@ -76,20 +76,18 @@ class _PickUpAddressScreenState extends State<PickUpAddressScreen> {
                               Padding(
                                 padding:
                                     const EdgeInsets.symmetric(horizontal: 32),
-                                child: Expanded(
-                                  child: TextField(
-                                    keyboardType: TextInputType.number,
-                                    controller: _pinCodeController,
-                                    textInputAction: TextInputAction.next,
-                                    style: TextStyle(fontSize: 12),
-                                    decoration: InputDecoration(
-                                      label: Text("Pin Code"),
-                                      border: OutlineInputBorder(
-                                          borderRadius:
-                                              BorderRadius.circular(5),
-                                          borderSide:
-                                              BorderSide(color: Colors.blue)),
-                                    ),
+                                child: TextField(
+                                  keyboardType: TextInputType.number,
+                                  controller: _pinCodeController,
+                                  textInputAction: TextInputAction.next,
+                                  style: TextStyle(fontSize: 12),
+                                  decoration: InputDecoration(
+                                    label: Text("Pin Code"),
+                                    border: OutlineInputBorder(
+                                        borderRadius:
+                                            BorderRadius.circular(5),
+                                        borderSide:
+                                            BorderSide(color: Colors.blue)),
                                   ),
                                 ),
                               )),
@@ -101,20 +99,18 @@ class _PickUpAddressScreenState extends State<PickUpAddressScreen> {
                               Padding(
                                 padding:
                                     const EdgeInsets.symmetric(horizontal: 32),
-                                child: Expanded(
-                                  child: TextField(
-                                    keyboardType: TextInputType.text,
-                                    textInputAction: TextInputAction.next,
-                                    controller: _addressController,
-                                    style: TextStyle(fontSize: 12),
-                                    decoration: InputDecoration(
-                                      label: Text("Address"),
-                                      border: OutlineInputBorder(
-                                          borderRadius:
-                                              BorderRadius.circular(5),
-                                          borderSide:
-                                              BorderSide(color: Colors.blue)),
-                                    ),
+                                child: TextField(
+                                  keyboardType: TextInputType.text,
+                                  textInputAction: TextInputAction.next,
+                                  controller: _addressController,
+                                  style: TextStyle(fontSize: 12),
+                                  decoration: InputDecoration(
+                                    label: Text("Address"),
+                                    border: OutlineInputBorder(
+                                        borderRadius:
+                                            BorderRadius.circular(5),
+                                        borderSide:
+                                            BorderSide(color: Colors.blue)),
                                   ),
                                 ),
                               )),
@@ -126,20 +122,18 @@ class _PickUpAddressScreenState extends State<PickUpAddressScreen> {
                               Padding(
                                 padding:
                                     const EdgeInsets.symmetric(horizontal: 32),
-                                child: Expanded(
-                                  child: TextField(
-                                    keyboardType: TextInputType.text,
-                                    textInputAction: TextInputAction.next,
-                                    controller: _cityController,
-                                    style: TextStyle(fontSize: 12),
-                                    decoration: InputDecoration(
-                                      label: Text("City"),
-                                      border: OutlineInputBorder(
-                                          borderRadius:
-                                              BorderRadius.circular(5),
-                                          borderSide:
-                                              BorderSide(color: Colors.blue)),
-                                    ),
+                                child: TextField(
+                                  keyboardType: TextInputType.text,
+                                  textInputAction: TextInputAction.next,
+                                  controller: _cityController,
+                                  style: TextStyle(fontSize: 12),
+                                  decoration: InputDecoration(
+                                    label: Text("City"),
+                                    border: OutlineInputBorder(
+                                        borderRadius:
+                                            BorderRadius.circular(5),
+                                        borderSide:
+                                            BorderSide(color: Colors.blue)),
                                   ),
                                 ),
                               )),
@@ -151,20 +145,18 @@ class _PickUpAddressScreenState extends State<PickUpAddressScreen> {
                               Padding(
                                 padding:
                                     const EdgeInsets.symmetric(horizontal: 32),
-                                child: Expanded(
-                                  child: TextField(
-                                    keyboardType: TextInputType.text,
-                                    textInputAction: TextInputAction.next,
-                                    controller: _stateController,
-                                    style: TextStyle(fontSize: 12),
-                                    decoration: InputDecoration(
-                                      label: Text("State"),
-                                      border: OutlineInputBorder(
-                                          borderRadius:
-                                              BorderRadius.circular(5),
-                                          borderSide:
-                                              BorderSide(color: Colors.blue)),
-                                    ),
+                                child: TextField(
+                                  keyboardType: TextInputType.text,
+                                  textInputAction: TextInputAction.next,
+                                  controller: _stateController,
+                                  style: TextStyle(fontSize: 12),
+                                  decoration: InputDecoration(
+                                    label: Text("State"),
+                                    border: OutlineInputBorder(
+                                        borderRadius:
+                                            BorderRadius.circular(5),
+                                        borderSide:
+                                            BorderSide(color: Colors.blue)),
                                   ),
                                 ),
                               )),

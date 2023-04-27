@@ -88,20 +88,18 @@ class _BankDetailsScreenState extends State<BankDetailsScreen> {
                               Padding(
                                 padding:
                                     const EdgeInsets.symmetric(horizontal: 32),
-                                child: Expanded(
-                                  child: TextField(
-                                    keyboardType: TextInputType.text,
-                                    textInputAction: TextInputAction.next,
-                                    controller: _accountHolderNameController,
-                                    style: TextStyle(fontSize: 12),
-                                    decoration: InputDecoration(
-                                      label: Text("Account Holder Name"),
-                                      border: OutlineInputBorder(
-                                          borderRadius:
-                                              BorderRadius.circular(5),
-                                          borderSide:
-                                              BorderSide(color: Colors.blue)),
-                                    ),
+                                child: TextField(
+                                  keyboardType: TextInputType.text,
+                                  textInputAction: TextInputAction.next,
+                                  controller: _accountHolderNameController,
+                                  style: TextStyle(fontSize: 12),
+                                  decoration: InputDecoration(
+                                    label: Text("Account Holder Name"),
+                                    border: OutlineInputBorder(
+                                        borderRadius:
+                                            BorderRadius.circular(5),
+                                        borderSide:
+                                            BorderSide(color: Colors.blue)),
                                   ),
                                 ),
                               )),
@@ -113,20 +111,18 @@ class _BankDetailsScreenState extends State<BankDetailsScreen> {
                               Padding(
                                 padding:
                                     const EdgeInsets.symmetric(horizontal: 32),
-                                child: Expanded(
-                                  child: TextField(
-                                    keyboardType: TextInputType.number,
-                                    textInputAction: TextInputAction.next,
-                                    controller: _bankAccountNoController,
-                                    style: TextStyle(fontSize: 12),
-                                    decoration: InputDecoration(
-                                      label: Text("Enter Bank Account No"),
-                                      border: OutlineInputBorder(
-                                          borderRadius:
-                                              BorderRadius.circular(5),
-                                          borderSide:
-                                              BorderSide(color: Colors.blue)),
-                                    ),
+                                child: TextField(
+                                  keyboardType: TextInputType.number,
+                                  textInputAction: TextInputAction.next,
+                                  controller: _bankAccountNoController,
+                                  style: TextStyle(fontSize: 12),
+                                  decoration: InputDecoration(
+                                    label: Text("Enter Bank Account No"),
+                                    border: OutlineInputBorder(
+                                        borderRadius:
+                                            BorderRadius.circular(5),
+                                        borderSide:
+                                            BorderSide(color: Colors.blue)),
                                   ),
                                 ),
                               )),

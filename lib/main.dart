@@ -1,10 +1,6 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:frenzy_seller/screens/bank_details_screen.dart';
-import 'package:frenzy_seller/screens/gst_details_screen.dart';
-import 'package:frenzy_seller/screens/pick_up_address_screen.dart';
-import 'package:frenzy_seller/screens/shop_details_screen.dart';
 import 'package:frenzy_seller/screens/splash_screen.dart';
 import 'package:frenzy_seller/theme/custom_theme.dart';
 import 'package:frenzy_seller/theme/theme.dart';
