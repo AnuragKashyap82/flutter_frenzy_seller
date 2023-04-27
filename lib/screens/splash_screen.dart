@@ -81,7 +81,7 @@ class _SplashScreenState extends State<SplashScreen> {
                             style: TextStyle(
                                 fontSize: 25,
                                 fontWeight: FontWeight.w500,
-                                letterSpacing: 0.5),
+                                letterSpacing: 0.6),
                           )),
                     ],
                   ),
