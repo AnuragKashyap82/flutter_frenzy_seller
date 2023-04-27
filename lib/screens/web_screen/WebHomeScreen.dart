@@ -10,6 +10,7 @@ import '../../widgets/reco_product_widgets.dart';
 import '../cancelled_orders_screen.dart';
 import '../delivered_orders_screen.dart';
 import '../login_screen.dart';
+import '../my_account_screen.dart';
 import '../new_order_screen.dart';
 import '../out_for_delivery_order_screen.dart';
 import '../packed_order_screen.dart';
@@ -270,12 +271,17 @@ class _WebHomeScreenState extends State<WebHomeScreen> {
                   width: 0,
                 ),
               ),
-              Align(
-                  alignment: Alignment.centerRight,
-                  child: Icon(
-                    Icons.more_vert,
-                    color: Colors.white,
-                  ))
+              GestureDetector(
+                onTap: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=> MyAccountScreen(snap: _sellerData)));
+                },
+                child: Align(
+                    alignment: Alignment.centerRight,
+                    child: Icon(
+                      Icons.more_vert,
+                      color: Colors.white,
+                    )),
+              )
             ],
           );
         }),
@@ -725,6 +731,7 @@ class _WebHomeScreenState extends State<WebHomeScreen> {
                           .collection("products")
                           .where("shopId",
                               isEqualTo: FirebaseAuth.instance.currentUser?.uid)
+                          .where("active", isEqualTo: true)
                           .snapshots(),
                       builder: (context,
                           AsyncSnapshot<QuerySnapshot<Map<String, dynamic>>>

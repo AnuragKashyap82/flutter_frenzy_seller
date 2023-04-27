@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:frenzy_seller/screens/home.dart';
+import 'package:frenzy_seller/screens/responsive_layout/responsive_layout_screens.dart';
 import 'package:frenzy_seller/screens/sign_up_screen.dart';
+import 'package:frenzy_seller/screens/web_screen/WebHomeScreen.dart';
 
 import '../animations/fade_animation.dart';
 import '../resources/authentication.dart';
@@ -208,8 +210,9 @@ class _LoginScreenState extends State<LoginScreen> {
                                     Navigator.pushReplacement(
                                         context,
                                         MaterialPageRoute(
-                                            builder: (context) =>
-                                            const HomeScreen()));
+                                            builder: (context) => const ResponsiveLayout(
+                                                webScreenLayout: WebHomeScreen(),
+                                                mobileScreenLayout: HomeScreen())));
                                   } else {
                                     Utils().showSnackBar(context, output);
                                   }

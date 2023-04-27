@@ -5,6 +5,7 @@ import 'package:frenzy_seller/screens/all_oredrs_screen.dart';
 import 'package:frenzy_seller/screens/cancelled_orders_screen.dart';
 import 'package:frenzy_seller/screens/delivered_orders_screen.dart';
 import 'package:frenzy_seller/screens/login_screen.dart';
+import 'package:frenzy_seller/screens/my_account_screen.dart';
 import 'package:frenzy_seller/screens/my_products_screen.dart';
 import 'package:frenzy_seller/screens/new_order_screen.dart';
 import 'package:frenzy_seller/screens/out_for_delivery_order_screen.dart';
@@ -412,7 +413,9 @@ class _HomeScreenState extends State<HomeScreen> {
                   'My Account',
                   style: TextStyle(color: Colors.black87),
                 ),
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=> MyAccountScreen(snap: _sellerData)));
+                },
               ),
             ),
             Padding(
@@ -880,6 +883,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           .collection("products")
                           .where("shopId",
                               isEqualTo: FirebaseAuth.instance.currentUser?.uid)
+                      .where("active", isEqualTo: true)
                           .snapshots(),
                       builder: (context,
                           AsyncSnapshot<QuerySnapshot<Map<String, dynamic>>>

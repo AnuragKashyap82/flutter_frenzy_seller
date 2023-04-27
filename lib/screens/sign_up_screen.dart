@@ -65,7 +65,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
             child: SingleChildScrollView(
               child: Padding(
                 padding: const EdgeInsets.all(8),
-                child: Container(
+                child: SizedBox(
                   width: width,
                   height: height,
                   child: Center(
@@ -79,12 +79,12 @@ class _SignUpScreenState extends State<SignUpScreen> {
                         mainAxisAlignment: MainAxisAlignment.start,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          SizedBox(
+                        const  SizedBox(
                             height: 16,
                           ),
                           FadeAnimation(
                             1.3,
-                            Align(
+                           const Align(
                               alignment: Alignment.topCenter,
                               child: Padding(
                                 padding:
@@ -100,7 +100,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                               ),
                             ),
                           ),
-                          SizedBox(
+                         const SizedBox(
                             height: 30,
                           ),
                           FadeAnimation(
