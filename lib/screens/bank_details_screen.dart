@@ -154,7 +154,7 @@ class _BankDetailsScreenState extends State<BankDetailsScreen> {
                                           FireStoreMethods()
                                               .uploadBankDetails(
                                                   accountHolderName:
-                                                      _bankAccountNoController
+                                                      _accountHolderNameController
                                                           .text,
                                                   accountNo:
                                                       _bankAccountNoController

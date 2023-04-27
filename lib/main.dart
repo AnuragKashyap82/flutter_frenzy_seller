@@ -7,6 +7,7 @@ import 'package:frenzy_seller/theme/theme.dart';
 import 'package:frenzy_seller/utils/custom_scrool_view.dart';
 
 void main() async{
+
   WidgetsFlutterBinding.ensureInitialized();
   if(kIsWeb){
     await Firebase.initializeApp(options: const FirebaseOptions(
@@ -16,11 +17,15 @@ void main() async{
       storageBucket: "frenzy-store-flutter.appspot.com",
       messagingSenderId: "670937123556",
       appId: "1:670937123556:web:669ec5b61560580a573af1",
+
     )
     );
   }else{
     await Firebase.initializeApp();
   }
+
+
+
   runApp( CustomTheme(
     initialThemeKey: MyThemeKeys.LIGHT,
 
